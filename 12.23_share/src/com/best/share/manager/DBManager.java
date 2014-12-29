@@ -32,8 +32,8 @@ public class DBManager {
 		ContentValues cv = new ContentValues();//实例化  一个  存放数据的控件
 		cv.put("longitude", s.getLongitude());//添加经度
 		cv.put("latitude", s.getLatitude());//添加纬度
-		cv.put("pubdate", s.getPubdate());//添加更新时间
-		cv.put("userdetailID", s.getUserdetailID());//添加用户的ID
+		cv.put("pubdate", s.getPubDate());//添加更新时间
+		cv.put("userdetailID", s.getUserDetailID());//添加用户的ID
 		//参数  （表名，允许为空的列是为了保证ContentValues没有的数据，插入的数据）
 		db.insert(DataBaseHelper.TABLE_LOCATION, null, cv);
 		/*方式二
@@ -66,9 +66,9 @@ public class DBManager {
 		SQLiteDatabase db = mHelper.getWritableDatabase();//得到写入的数据
 		ContentValues cv = new ContentValues();//实例化  一个  存放数据的控件
 		cv.put("chatID", gc.getChatID());//添加经度
-		cv.put("pubdate", gc.getPubdate());//添加纬度
-		cv.put("chatlook", gc.getChatlook());//添加更新时间
-		cv.put("chattext", gc.getChattext());//添加用户的ID
+		cv.put("pubdate", gc.getPubDate());//添加纬度
+		cv.put("chatlook", gc.getChatLook());//添加更新时间
+		cv.put("chattext", gc.getChatText());//添加用户的ID
 		//参数  （表名，允许为空的列是为了保证ContentValues没有的数据，插入的数据）
 		db.insert(DataBaseHelper.TABLE_GROUPCHAT, null, cv);
 		/*方式二

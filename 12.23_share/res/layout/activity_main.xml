@@ -12,7 +12,7 @@
         android:layout_marginRight="20dp"
         android:orientation="vertical" >
 
-        <com.best.share.ui.RoundedCornerImageView
+        <com.best.share.view.RoundedCornerImageView
             android:id="@+id/image_icon"
             android:layout_width="100dp"
             android:layout_height="100dp"

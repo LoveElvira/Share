@@ -9,27 +9,27 @@ package com.best.share.bean;
 public class GroupChat {
 	private int ID;
 	private String chatID;//聊天人的ID
-	private String pubdate;//发送聊天内容的时间
-	private String chatlook;//表情
-	private String chattext;//聊天的内容
+	private String pubDate;//发送聊天内容的时间
+	private String chatLook;//表情
+	private String chatText;//聊天的内容
 	public GroupChat() {
 	}
 	
-	public GroupChat(int iD, String chatID, String pubdate, String chatlook,
-			String chattext) {
+	public GroupChat(int iD, String chatID, String pubDate, String chatLook,
+			String chatText) {
 		ID = iD;
 		this.chatID = chatID;
-		this.pubdate = pubdate;
-		this.chatlook = chatlook;
-		this.chattext = chattext;
+		this.pubDate = pubDate;
+		this.chatLook = chatLook;
+		this.chatText = chatText;
 	}
 
-	public GroupChat(String chatID, String pubdate, String chatlook,
-			String chattext) {
+	public GroupChat(String chatID, String pubDate, String chatLook,
+			String chatText) {
 		this.chatID = chatID;
-		this.pubdate = pubdate;
-		this.chatlook = chatlook;
-		this.chattext = chattext;
+		this.pubDate = pubDate;
+		this.chatLook = chatLook;
+		this.chatText = chatText;
 	}
 	public int getID() {
 		return ID;
@@ -40,28 +40,28 @@ public class GroupChat {
 	public void setChatID(String chatID) {
 		this.chatID = chatID;
 	}
-	public String getPubdate() {
-		return pubdate;
+	public String getPubDate() {
+		return pubDate;
 	}
-	public void setPubdate(String pubdate) {
-		this.pubdate = pubdate;
+	public void setPubDate(String pubDate) {
+		this.pubDate = pubDate;
 	}
-	public String getChatlook() {
-		return chatlook;
+	public String getChatLook() {
+		return chatLook;
 	}
-	public void setChatlook(String chatlook) {
-		this.chatlook = chatlook;
+	public void setChatLook(String chatLook) {
+		this.chatLook = chatLook;
 	}
-	public String getChattext() {
-		return chattext;
+	public String getChatText() {
+		return chatText;
 	}
-	public void setChattext(String chattext) {
-		this.chattext = chattext;
+	public void setChatText(String chatText) {
+		this.chatText = chatText;
 	}
 	@Override
 	public String toString() {
-		return "GroupChat [ID=" + ID + ", chatID=" + chatID + ", pubdate="
-				+ pubdate + ", chatlook=" + chatlook + ", chattext=" + chattext
+		return "GroupChat [ID=" + ID + ", chatID=" + chatID + ", pubDate="
+				+ pubDate + ", chatLook=" + chatLook + ", chatText=" + chatText
 				+ "]";
 	}
 	

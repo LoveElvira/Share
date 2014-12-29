@@ -11,25 +11,25 @@ public class ShareLocation {
 	private int ID;
 	private String longitude;//经度
 	private String latitude;//纬度
-	private String pubdate;//更新的时间
-	private String userdetailID;//登陆用户的ID
+	private String pubDate;//更新的时间
+	private String userDetailID;//登陆用户的ID
 	public ShareLocation() {
 	}
 	
 	public ShareLocation(int iD, String longitude, String latitude,
-			String pubdate, String userdetailID) {
+			String pubDate, String userDetailID) {
 		ID = iD;
 		this.longitude = longitude;
 		this.latitude = latitude;
-		this.pubdate = pubdate;
-		this.userdetailID = userdetailID;
+		this.pubDate = pubDate;
+		this.userDetailID = userDetailID;
 	}
 
-	public ShareLocation( String longitude, String latitude, String pubdate,String userdetailID) {
+	public ShareLocation( String longitude, String latitude, String pubDate,String userDetailID) {
 		this.longitude = longitude;
 		this.latitude = latitude;
-		this.pubdate = pubdate;
-		this.userdetailID = userdetailID;
+		this.pubDate = pubDate;
+		this.userDetailID = userDetailID;
 	}
 	public int getID() {
 		return ID;
@@ -46,22 +46,22 @@ public class ShareLocation {
 	public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
-	public String getPubdate() {
-		return pubdate;
+	public String getPubDate() {
+		return pubDate;
 	}
-	public void setPubdate(String pubdate) {
-		this.pubdate = pubdate;
+	public void setPubDate(String pubdate) {
+		this.pubDate = pubdate;
 	}
-	public String getUserdetailID() {
-		return userdetailID;
+	public String getUserDetailID() {
+		return userDetailID;
 	}
-	public void setUserdetailID(String userdetailID) {
-		this.userdetailID = userdetailID;
+	public void setUserDetailID(String userDetailID) {
+		this.userDetailID = userDetailID;
 	}
 	@Override
 	public String toString() {
 		return "Location [ID=" + ID + ", longitude=" + longitude
-				+ ", latitude=" + latitude + ", pubdate=" + pubdate + "]";
+				+ ", latitude=" + latitude + ", pubdate=" + pubDate + "]";
 	}
 	
 }
